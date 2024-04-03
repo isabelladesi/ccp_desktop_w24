@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript">
+        function displayInformation () {
+            // Your code goes here. 
+            // Do not change any other code in this file
+            // All of the steps below must be achieved using JavaScript!
+    
+            
+            // 1. Change the h1 element to your name.
+            document.querySelector('h1').innerHTML = "Isabella's Pet Gallery";
+               
+            // 2. Update the three span elements using ONLY JavaScript
+            document.getElementById("URL").innerHTML = document.URL;
+            document.querySelector("#URL").innerHTML = document.URL;
+            document.querySelector("#items").innerHTML = document.querySelectorAll("h2").length;
+            document.querySelector("#time").innerHTML = new Date();
+            // 3. Change the background color and margin for the entire page.
+            document.body.style.backgroundColor = "lightBlue";
+            document.body.style.margin = "20px"
+                
+        }
+    
+        // 4. If someone uses the keyboard shortcut to copy the words "Thank you for visiting!" then add the words "Go Blue" to the final div.  
+        // Each occurrence should be on a separate line.  Don't use 
+        // paragraphs. 
+    
+                   
+    </script>
+
+    <title>Pets</title>
+</head>
+<body class="pets-body" onload="displayInformation();">
+
+    <header>
+        <a href = "#main" class="skip-this">Skip to Main Content</a>
+        <nav>
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "pets.html" class="current-page">Pets</a></li>
+                <li><a href = "recipes.html">Recipes</a></li>
+                <li><a href = "travel.html">Travel</a></li>
+            </ul>
+        </nav>
+        <!-- <h1>PawsPlatesAndPaths</h1> -->
+
+    </header>
+    <main id="main">
+        <h1>Pets</h1>
+        <div>
+            <h2>Use JavaScript to display the following information here:</h2>
+	        <p>
+                The URL of this page is: <span id = "URL"></span><br/>
+                The number of H2 items for this page: <span id = "items"></span><br/>
+                The current date/time is: <span id = "time"></span><br/>
+            </p>
+
+		    <p oncopy="copyFunction()">Thank you for visiting!</p>
+
+	        
+            <div id="cheer"></div>
+        </div>
+
+        <div>
+            
+            <h2>Bacon Q Dog</h2>
+            <div class="pet-container">
+                
+                <img src="images/bacon.jpg"  width ="400" alt="Brown labradoodle wearing colorful lei" class="interactive-image main-image cursor">
+                    
+                <div class="bacon-likes">
+                    <h3>Likes</h3>
+                    <ul>
+                        <li>Belly rubs</li>
+                        <li>Playing tug-of-war</li>
+                        <li>Sneaking onto the couch</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+                <p>Bacon Q. Dog is a 9yr old labradoodle. He prefers to spend his days lounging among the three different beds/couches that his family has gifted him. He enjoys a walk or two around the neighborhood, as long as he can pretend that he doesn't see any of the other animals to avoid the embarrassment of not wanting to admit he has no wolf-like skills in chasing them.</p> 
+                <P>At night just as the rest of the family is ready to relax, Bacon suddenly wants to release all of his energy. He will place his toys on a mini couch and frantically drag the couch around, giving his toys "a ride." There is also a lot of rolling. Lots and lots of rolling.</P>
+            
+            
+                
+            </div>
+            <h3>Photo Gallery</h3>
+        <div class="bacon-photos">
+            <img src="images/bacon_bandana.JPG"  alt = "Brown labradoodle wearing an orange bandana" class="image-fit">
+            <img src="images/bacon_graduation.JPG"   alt="Small labradoodle puppy wearing a graduation cap and gown" class="image-fit">
+       
+            <img src="images/bacon_halloween.JPG"   alt="Brown labradoodle wearing a pirate costume" class="image-fit">
+        </div>
+            
+            <!-- Jackie Wolf -->
+        
+        </div>
+        <div>
+            <h2>Peddie</h2>
+            <div class="pet-container">
+                <img src="images/peddie_play.jpg" width = "400" alt="Golden retriever playing in the snow holding a rope at golden hour" class="interactive-image" class="main-image" >
+                <div class="pet-likes">
+                <h3>Likes</h3>
+                <ul>
+                    <li>Swimming</li>
+                    <li>Running in the park</li>
+                    <li>Meeting new friends</li>
+                </ul>
+            </div>
+            </div>
+
+            <p>Peddie, the Golden Retriever, is a charming and lively companion known for his beautiful coat and playful nature. He's a perfect partner for outdoor fun, loved for his loyalty and gentle disposition.</p> 
+            <P>APeddie's intelligence and friendly demeanor make him a beloved member of his family and a source of joy for everyone who knows him.</P>
+            <h3>Photo Gallery</h3>
+            <div class="bacon-photos">
+            <img src="images/peddie_sleep.jpg" width ="200" alt = "Golden retriever sleeping" class="image-fit">
+            <img src="images/peddie.jpg"  width ="200" alt="Small golden retriever puppy side eyeing the camera" class="image-fit">
+            <!-- </div>
+            <div class="bacon-photos"> -->
+            <img src="images/peddie_swim.jpg"  width ="200" alt="Golden Retriever swimming in a lake" class="image-fit">
+            </div>
+
+            
+        </div>
+        <div>
+            <h2>Chako</h2>
+            <div class="pet-container">
+                <img src="images/Chako1.jpg" width = "400" alt="Black and Tan color Shiba Inu's head peaking over a sofa"  class="interactive-image" class="main-image">
+
+                <div class="pet-likes">
+                <h3>Likes</h3>
+                <ul>
+                    <li>Sleep</li>
+                    <li>Play</li>
+                    <li>Eat</li>
+                </ul>
+            </div>
+            </div>
+            <p>With a coat as dark as midnight but eyes as bright as stars, he seemed to embody both the mystery and the exuberance of life itself. Agile and playful, he danced around the park as if the grass were his personal stage, captivating everyone with his vivacity.</p> 
+            <P>Yet, when at home, Chako transformed into a zen master. He would curl up on his favorite rug, eyes half-closed in contemplation, as if solving the great puzzles of the universe. Both spirited and serene, Mochi was a living testament to the richness of dualities, teaching his human companions that one could be many things all at once.</P>
+            <h3>Photo Gallery</h3>
+            <div class="bacon-photos">
+            <img src="images/Chako5.jpg" width ="200" alt = "Chako is lying down in bed" class="image-fit">
+            <img src="images/Chako3.jpg"  width ="200" alt="Chako is so tired and he is having a good night's sleep" class="image-fit">
+            <!-- <video width="200"  controls>
+                <source src="images/bacon_agility.mov">
+                Your browser does not support the video tag.  This was a video of a girl and dog demonstrating a sit and stay procedure
+            </video> -->
+            <img src="images/Chako4.jpg"  width ="200" alt="Chako does not want to move, so he sits there and watches." class="image-fit">
+            </div>
+            
+        </div>
+        <div>
+            <h2>Juno</h2>
+
+            <div class="pet-container">
+            <img src="images/classic_juno.JPG" width = "400" alt="A black and brown dog laying on a rug" class="interactive-image" class="main-image">
+            <div class="pet-likes">
+            <h3>Likes</h3>
+            <ul>
+                <li>Human Food</li>
+                <li>Head Pats</li>
+                <li>Sleeping</li>
+            </ul>
+        </div>
+        </div>
+
+            <p>No one knows exactly what breed Juno is, but that makes him all the more special. He was adopted before he was one year old; despite this and his German shepherd-esque looks, he stayed close to the same size, hovering around 50 lbs into adulthood. At the weathered age of ten years old, Juno is dealing with hip problems, but manages to stay in good spirits.</p> 
+            <P>One of Junos favorite pastimes is finding the dirtiest puddle within a one-mile radius and making sure every inch of him makes contact with said puddle. If rolling around in dirt was an Olympic sport, Juno would have been the one that facilitated its inclusion into the Olympics.</P>
+            <h3>Photo Gallery</h3>
+            <div class="bacon-photos">
+            <img src="images/juno_pup.JPG" width ="200" alt = "A young black and brown dog with his tongue hanging out" class="image-fit">
+            <img src="images/juno_laying.JPG"  width ="200" alt="Black and brown dog asleep on his side" class="image-fit">
+            <!-- <video width="200"  controls>
+                <source src="images/bacon_agility.mov">
+                Your browser does not support the video tag.  This was a video of a girl and dog demonstrating a sit and stay procedure
+            </video> -->
+            <img src="images/juno_laying_2.JPG"  width ="200" alt="A black and brown dog laying on a wood floor." class="image-fit">
+            </div>
+            
+        </div>
+        <div>
+            <h2>Sage</h2>
+            <div class="pet-container">
+            <img src="images/sage_sleep.jpeg" width = "400" alt="A mans hand is petting a golden retrievers neck." class="interactive-image" class="main-image">
+            <div class="pet-likes">
+            <h3>Likes</h3>
+            <ul>
+                <li>Carrot</li>
+                <li>Nap</li>
+                <li>Big park</li>
+            </ul>
+        </div>
+        </div>
+            <p>Sage is a 3 year old Golden Retriever. She is one of the laziest dogs. She loves sneaking into the bedroom and hopping onto the neatest bed. She also loves riding in a car with the windows open feeling the wind and air. She enjoys walking, only if you take her for a ride to a big arboretum or park. Walking around the neighborhood is not necessarily her cup of tea.</p> 
+            <P>Her favorite food is corn. One day, she stole corn on the cob from the dining table, which was surprising because she is normally gentle and polite. She took the stolen corn to the patio and enjoyed her meal by herself. Unfortunately, the corn turned out to be unripe, so she ended up vomiting it all later.</P>
+            <h3>Photo Gallery</h3>
+            <div class="bacon-photos">
+            <img src="images/sage_pet.jpeg" width ="200" alt = "A golden retriever is sleeping on the couch." class="image-fit">
+            <img src="images/sage_young.jpeg"  width ="200" alt="A young golden retriever is laying down" class="image-fit">
+            <!-- <video width="200"  controls>
+                <source src="images/bacon_agility.mov">
+                Your browser does not support the video tag.  This was a video of a girl and dog demonstrating a sit and stay procedure
+            </video> -->
+            <img src="images/sage_car.jpeg"  width ="200" alt="A happy golden retriever is sitting in the cars backseat." class="image-fit">
+            </div>
+            
+        </div>
+    </main>
+    
+</body>
+</html>
